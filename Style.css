@@ -1,0 +1,30 @@
+/*Coral + White + Light Blue (Beachy/Vibrant)
+*/
+*{
+  color: #2F4F4F;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  background-color: lightblue;
+}
+h1 {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: lightcoral;
+}
+h3 {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: #9FE2BF
+  ;
+}
+.List {
+  color: blue;
+}
