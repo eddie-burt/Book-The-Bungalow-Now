@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        </title>
+        <link rel="stylesheet" href="Cozy bungalow by the intercostal.css">
+    
+</head>
+
+<body>
+    <!-- HTML -->
+    <div class="topbar">
+        <div class="logo">Book The Bungalow</div>
+        <ul class="nav-items">
+            <li><a href="BooktheBungalowNow.html" class="active">Home</a></li>
+            <li><a href="Cozy Poolside Bungalow.html">Cozy Poolside Bungalow</a></li>
+            <li><a href="Cozy Bungalow by the Intracoastal.html">Cozy Bungaow by The Intercostal</a></li>
+        </ul>
+    </div>
+    <!-- CSS -->
+    <style>
+        .topbar {
+            background-color: #333;
+            height: 60px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            margin-right: auto;
+            /* Pushes navigation items to the right */
+        }
+
+        .nav-items {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-items li {
+            margin-left: 20px;
+        }
+
+        .nav-items a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+
+        .nav-items a:hover {
+            color: #4db6ac;
+        }
+
+        .nav-items a.active {
+            background-color: #4db6ac;
+            color: white;
+        }
+
+        /* Don't forget to add this to your body to prevent content from hiding under the bar */
+        body {
+            padding-top: 60px;
+        }
+    </style>
+    <!-- JavaScript for marking active page -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const currentPage = window.location.pathname.split('/').pop();
+            const navLinks = document.querySelectorAll('.nav-items a');
+
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+
+            // Default to home if on the root path
+            if (currentPage === '' || currentPage === '/' || currentPage === 'index.html') {
+                navLinks[0].classList.add('active');
+            }
+        });
+    </script>
+    <h1 style="text-align: center;">Want to Book the Bungalow?</h1>
+    <h2 style="text-align: center;">Cozy Bungalow by the Intercostal</h2>
+    <div style="text-align: center; font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 20px;">
+        <img src="https://a0.muscache.com/im/pictures/cb163cd4-7b74-436d-a6a5-b6409ddccc01.jpg?im_w=480" alt="Bungalow"
+            style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+        <h2>🌿 Bungalow by the Intracoastal</h2>
+        <p>Welcome to our cozy 3-bedroom, 2-bathroom bungalow tucked away on a private, wooded acre just off Middle
+            Sound Loop Road. With space to comfortably sleep 4, this charming retreat offers the perfect blend of
+            nature, comfort, and proximity to Wilmington’s best beach spots.</p>
+
+        <h3>✨ Highlights</h3>
+        <ul style="list-style-position: inside;">
+            <li>Private wooded lot just 6 miles from Wrightsville Beach</li>
+            <li>Peaceful screened-in porch and fire pit for relaxing evenings</li>
+            <li>Perfect for couples, small families, or boating enthusiasts</li>
+            <li>Walking distance to Pages Creek Preserve and scenic trails</li>
+        </ul>
+
+        <h3>📍 Prime Location</h3>
+        <ul style="list-style-position: inside;">
+            <li>6 miles to Wrightsville Beach</li>
+            <li>Less than 1 mile to Pages Creek Preserve</li>
+            <li>Close to Figure Eight Island, Middle Sound Marina, and UNCW</li>
+            <li>10 minutes to Mayfaire Shopping Center</li>
+            <li>15 minutes to Downtown Wilmington</li>
+        </ul>
+
+        <h3>🛋️ The Space</h3>
+        <p>
+            Wake up with your morning coffee on the <strong>screened-in porch</strong>, surrounded by tall trees and
+            birdsong. Spend your days exploring nearby beaches, boating on the Intracoastal, or enjoying backyard games
+            like <strong>cornhole</strong> and relaxing by the <strong>fire pit</strong> at night.
+        </p>
+        <p>
+            Inside, the open-concept living and dining area is filled with natural light, and the kitchen is fully
+            stocked for easy meals at home. The three bedrooms include two <strong>queen beds</strong>, a
+            <strong>twin</strong>, and a <strong>futon</strong> for extra flexibility. Two full bathrooms ensure plenty
+            of space for everyone.
+        </p>
+        <p>
+            For those who love to explore, stroll the wooded trails at Pages Creek Preserve just down the road, or rock
+            on the front porch as stars light up the sky and you hear distant waves from the Intracoastal Waterway.
+        </p>
+
+        <h3>🔑 Guest Access</h3>
+        <p>
+            Guests enjoy <strong>full access to the home</strong>, including self check-in with a convenient lockbox.
+            Detailed instructions are sent the morning of your arrival—arrive anytime, even late at night.
+        </p>
+
+        <h3>📌 Additional Notes</h3>
+        <ul style="list-style-position: inside;">
+            <li>Lawn care is scheduled bi-weekly—just let us know if you’d prefer they skip during your stay.</li>
+            <li>The home sits at a slight angle for privacy and better energy use. Built in the 1980s, it has a cozy,
+                retro charm—reflected in our pricing.</li>
+            <li>Boaters welcome! We can help accommodate parking for <strong>small boats, kayaks, or jet
+                    skis</strong>—please check with us before arrival.</li>
+            <li>Rentals and adventures nearby: Try <strong>Entropy Boat Rentals</strong> (less than a mile away) or book
+                an excursion with <strong>Cape Fear Adventure Company</strong>.</li>
+        </ul>
+
+    </div>
+
+</body>
+
+</html>

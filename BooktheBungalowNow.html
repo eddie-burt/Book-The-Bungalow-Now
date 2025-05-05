@@ -1,0 +1,132 @@
+<!--This is the website landing page-->
+<!DOCTYPE html>
+<html>
+
+<Head>
+  <title>
+    Book The Bungalow!
+     
+  </title>
+  <link rel="stylesheet" href="landing page.css">
+</Head>
+<body style="text-align: center;">
+      <!-- HTML -->
+      <div class="topbar">
+        <div class="logo">Book The Bungalow</div>
+        <ul class="nav-items">
+            <li><a href="BooktheBungalowNow.html" class="active">Home</a></li>
+            <li><a href="Cozy Poolside Bungalow.html">Cozy Poolside Bungalow</a></li>
+            <li><a href="Cozy Bungalow by the Intracoastal.html">Cozy Bungaow by The Intercostal</a></li>
+        </ul>
+    </div>
+    <div>
+    <!-- CSS -->
+    <style>
+        .topbar {
+            background-color: #333;
+            height: 60px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            margin-right: auto;
+            /* Pushes navigation items to the right */
+        }
+
+        .nav-items {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-items li {
+            margin-left: 20px;
+        }
+
+        .nav-items a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+
+        .nav-items a:hover {
+            color: #4db6ac;
+        }
+
+        .nav-items a.active {
+            background-color: #4db6ac;
+            color: white;
+        }
+
+        /* Don't forget to add this to your body to prevent content from hiding under the bar */
+        body {
+            padding-top: 60px;
+        }
+    </style>
+    <!-- JavaScript for marking active page -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const currentPage = window.location.pathname.split('/').pop();
+            const navLinks = document.querySelectorAll('.nav-items a');
+
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+
+            // Default to home if on the root path
+            if (currentPage === '' || currentPage === '/' || currentPage === 'index.html') {
+                navLinks[0].classList.add('active');
+            }
+        });
+    </script>
+    </div>
+  <h1 style="text-align: center;">
+    Welcome!
+    <br>
+    Want to Book The Bungalows?
+  </h1>
+  
+  
+<h2 style="text-align: center;" style="color: aquamarine;" id="moto"><em>Two cozy escapes. One unforgettable getaway.</em></h2>
+
+<p>Discover your perfect beachside retreat in beautiful <strong>Wilmington, NC</strong>. Whether you're looking to cool off by your private pool or watch the sun dip below the intracoastal waterway, we have the ideal spot for your next escape.</p>
+
+
+
+<h2>🏖️ Cozy Poolside Bungalow</h2>
+<img src="https://a0.muscache.com/im/pictures/3fd85dab-2c3c-4c9c-af9c-e1da8e17e2f8.jpg?im_w=1200" alt="Bungalow"
+style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+<p>Relax and recharge at this charming home featuring a private pool, comfy interiors, and a fire pit perfect for evening gatherings.</p>
+<p>📍 <a href="https://a0.muscache.com/im/pictures/79df5900-d058-4a65-9a2a-483c668dbaa3.jpg?im_w=720" target="_blank" >View on Airbnb</a></p>
+
+<h2>🌅 Cozy Bungalow by the Intracoastal</h2>
+<img src="https://a0.muscache.com/im/pictures/79df5900-d058-4a65-9a2a-483c668dbaa3.jpg?im_w=240" alt="Bungalow"
+style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+<p>Soak in serene views just steps from the water. This peaceful hideaway offers a breezy beach vibe and its own fire pit for cozy nights.</p>
+<p>📍 <a href="https://www.airbnb.com/rooms/13271797?source_impression_id=p3_1746417351_P3m47gIPCWnQlsKw" target="_blank">View on Airbnb</a></p>
+
+
+
+<p>🚫 No dogs | 🚭 No smoking</p>
+<p>Whether you're planning a family trip, a romantic escape, or a solo staycation, our bungalows are clean, cozy, and waiting for you.</p>
+
+</body>
+
+</html>
