@@ -1,0 +1,64 @@
+/*Coral + White + Light Blue (Beachy/Vibrant)
+Light Blue (Background): #DFF6FF
+
+Coral (Primary/Accent): #FF7F50
+
+Sand Beige: #F5DEB3
+
+Seafoam Green: #9FE2BF
+
+Dark Slate (Text): #2F4F4F
+
+White: #FFFFFF
+
+
+
+
+or 
+
+
+Sand Beige – #F4E2D8
+
+Ocean Blue – #2E8BC0
+
+Seafoam Green – #A8DADC
+
+Coral – #FF6B6B
+
+Sunset Orange – #FFA07A
+
+Palm Green – #88B04B
+
+Shell Pink – #F9D5D3
+
+Driftwood Brown – #8E735B
+
+White Sand – #FFF5E1
+
+
+*/
+body {
+    color: #2F4F4F;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: lightblue;
+}
+h2 {
+    padding: 10px;
+    border: 1px solid black;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #9FE2BF;
+    ;
+}
+img {
+    padding: 10px;
+    border: 1px solid #F9D5D3;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #F9D5D3;
+    ;
+}
