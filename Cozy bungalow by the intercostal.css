@@ -16,8 +16,8 @@ White: #FFFFFF
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+       font-family: playfair display;
     
-    font-family: 'Times New Roman', Times, serif;
     text-align: center;
 }
 body {

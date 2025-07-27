@@ -5,7 +5,7 @@ Coral (Primary/Accent): #FF7F50
 
 Sand Beige: #F5DEB3
 
-Seafoam Green: #9FE2BF
+Seafoam Green: ##96ceb4
 
 Dark Slate (Text): #2F4F4F
 
@@ -39,26 +39,32 @@ White Sand – #FFF5E1
 */
 body {
     color: #2F4F4F;
-    margin: 0;
+    margin: 10;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+   font-family: playfair display;
     text-align: center;
-    background-color: lightblue;
+    background-color: #ffeead;
 }
 h2 {
     padding: 10px;
     border: 1px solid black;
     margin: 10px;
     border-radius: 10px;
-    background-color: #9FE2BF;
-    ;
+    background-color: #96ceb4;
+}
+h2:hover {
+    transform: translate(0, -5px);
+    transition: transform 0.2s;
 }
 img {
     padding: 10px;
-    border: 1px solid #F9D5D3;
+    border: 1px solid 	#ffcc5c;
     margin: 10px;
     border-radius: 10px;
-    background-color: #F9D5D3;
-    ;
+    background-color: #ffcc5c;
+}
+img:hover {
+    transform: scale(1.01);
+    transition: transform 0.2s;
 }
