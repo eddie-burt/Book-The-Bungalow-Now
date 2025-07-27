@@ -5,7 +5,7 @@ Coral (Primary/Accent): #FF7F50
 
 Sand Beige: #F5DEB3
 
-Seafoam Green: ##96ceb4
+Seafoam Green: ##c6E3DB
 
 Dark Slate (Text): #2F4F4F
 
@@ -36,22 +36,37 @@ Driftwood Brown – #8E735B
 White Sand – #FFF5E1
 
 
+bg for the img #c6E3DB
+
+
+
+
+
+
 */
 body {
     color: #2F4F4F;
     margin: 10;
     padding: 0;
     box-sizing: border-box;
-   font-family: playfair display;
+    font-family: 'comic neue', sans-serif;
+    font-size: large;
     text-align: center;
     background-color: #ffeead;
 }
+#first {
+    
+    
+    margin-left: 20%;
+    margin-right: 20%;
+}
 h2 {
-    padding: 10px;
+    padding: 20px;
     border: 1px solid black;
     margin: 10px;
     border-radius: 10px;
-    background-color: #96ceb4;
+    background-color: #c6E3DB;
+    display: inline-block;
 }
 h2:hover {
     transform: translate(0, -5px);
@@ -59,10 +74,10 @@ h2:hover {
 }
 img {
     padding: 10px;
-    border: 1px solid 	#ffcc5c;
+  
     margin: 10px;
     border-radius: 10px;
-    background-color: #ffcc5c;
+    background-color: #c6E3DB;
 }
 img:hover {
     transform: scale(1.01);

@@ -13,74 +13,49 @@ White: #FFFFFF
 */
 *{
     color: #2F4F4F;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-    font-family: playfair display;
+   
+    font-family: 'comic neue', sans-serif;
+    font-size: large;
     text-align: center;
 }
 body {
-   background-color: lightblue;
+   background-color: #ffeead;
+   
   }
   h1 {
-    border: 1px solid black;
+    
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
-    background-color: lightcoral;
+    background-color: #c6E3DB;
+   justify-self: center;
+    width: fit-content;
+    font-size: xx-large;
   }
   h3 {
-    border: 1px solid black;
-    padding: 10px;
-    margin: 10px;
+    
+    padding: 20px;
+    margin: 0px;
     border-radius: 10px;
-    background-color: #9FE2BF
-    ;
+    background-color: #c6E3DB;
+    width: fit-content;
+    justify-self: center;
+    
   }
   .List {
     color: blue;
   }
   
 
-
-  .gallery {
-  --s: 150px; /* control the size */
-  --g: 10px;  /* control the gap */
-  display: grid;
-  margin: calc(var(--s) + var(--g));
-  justify-self: center;
-  grid-column: 2;
+img {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #c6E3DB;
+    width: fit-content;
 }
-
-.gallery > img {
-  grid-area: 1/1;
-  width: var(--s);
-  aspect-ratio: 1.15;
-  object-fit: cover;
-  clip-path: polygon(25% 0%, 75% 0%, 100% 50%,75% 100%,25% 100%,0 50%);
-  transform: translate(var(--_x,0),var(--_y,0)) scale(var(--_t,1));
-  cursor: pointer;
-  filter: grayscale(80%);
-  transition: .2s linear;
   
-}
-.gallery > img:hover {
-  filter: grayscale(0);
-  z-index: 1;
-  --_t: 1.2;
-}
-
-.gallery > img:nth-child(1) {--_y: calc(-100% - var(--g))}
-.gallery > img:nth-child(7) {--_y: calc( 100% + var(--g))}
-.gallery > img:nth-child(3),
-.gallery > img:nth-child(5) {--_x: calc(-75% - .87*var(--g))}
-.gallery > img:nth-child(4),
-.gallery > img:nth-child(6) {--_x: calc( 75% + .87*var(--g))}
-.gallery > img:nth-child(3),
-.gallery > img:nth-child(4) {--_y: calc(-50% - .5*var(--g))}
-.gallery > img:nth-child(5), 
-.gallery > img:nth-child(6) {--_y: calc( 50% + .5*var(--g))}
 
 
 body {
@@ -88,29 +63,6 @@ body {
   min-height: 100vh;
   display: grid;
   place-content: center;
-  background: #aabbfb;
+  background: #ffeead;
 }
 
-#titlebar{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows:  1fr;
-  justify-items: center;
-  align-items: center;
-}
-#Poolside {
-  grid-column: 1;
-  grid-row: 1;
-  text-align: right;
-  justify-self: right;
-  justify-content: center;
-   font-size: xx-large;
-}
-#bungalow {
- font-size: xx-large;
- justify-self: left;
-  grid-column: 3;
-  grid-row: 1;
-  text-align: left;
-  justify-content: center;
-}

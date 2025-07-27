@@ -9,6 +9,8 @@ Seafoam Green: #9FE2BF
 
 Dark Slate (Text): #2F4F4F
 
+#c6E3DB
+
 White: #FFFFFF
 */
 *{
@@ -16,27 +18,31 @@ White: #FFFFFF
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-       font-family: playfair display;
+     font-family: 'comic neue', sans-serif;
+    font-size: large;
     
     text-align: center;
 }
 body {
-   background-color: lightblue;
+   background-color: #ffeead;
+   font-family: 'comic neue', sans-serif;
+    font-size: large;
   }
   h1 {
     border: 1px solid black;
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
-    background-color: lightcoral;
+    background-color: #c6E3DB;
+    display: inline-block;
   }
   h3 {
     border: 1px solid black;
-    padding: 10px;
+    padding: 20px;
     margin: 10px;
     border-radius: 10px;
-    background-color: #9FE2BF
-    ;
+    background-color: #c6E3DB;
+    display: inline-block;
   }
   .List {
     color: blue;
@@ -46,5 +52,5 @@ body {
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
-    background-color: #2F4F4F;
+    background-color: #c6E3DB;
   }
